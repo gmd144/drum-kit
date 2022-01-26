@@ -1,0 +1,61 @@
+body {
+    background: url("audience2.jpg") bottom center;
+    background-size: cover;
+}
+
+body::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-image: linear-gradient(to bottom, rgb(0,0,0), rgb(0,0,0));
+    opacity: 0.6;
+}
+
+html {
+    font-size: 10px;
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    z-index: 10;
+}
+
+.key {
+    margin: 1rem;
+    padding: 1rem 0.5rem;
+    width: 10em;
+    text-align: center;
+    color: white;
+    border: 0.35em solid black;
+    transition: all 0.07s;
+    border-radius: .5em;
+    background: rgba(0, 0, 0, 0.4);
+}
+
+
+.key h2 {
+    font-size: 3rem !important;
+    
+}
+
+.key span {
+    font-size: 1.2rem;
+    letter-spacing: .1rem;
+    color: gold;
+}
+
+.playing{
+    transform: scale(1.1);
+    border: 0.75em solid rgb(39, 49, 53);
+    box-shadow: 0 0 1em rgb(16, 18, 19);
+}
